@@ -1,5 +1,5 @@
 {% set version = "0.1.0.dev0" %}
-{% set commit = "f38254abd71543613e39588db40ee106d61cae46" %}
+{% set commit = "42cc57d9780a9125b4db41aec8a32202eb38ec47" %}
 
 package:
   name: symengine
@@ -8,10 +8,9 @@ package:
 source:
   fn: {{ commit }}.tar.gz
   url: https://github.com/symengine/symengine/archive/{{ commit }}.tar.gz
-  sha256: 5b0fa3ef08555da1d825e7e3b9a87b653c6aaac8b1e55bdd691ecb9ee0ea7e3e
 
 build:
-  number: 1
+  number: 2
   skip: true        # [win and not py35]
   features:
     - vc14          # [win and py35]
