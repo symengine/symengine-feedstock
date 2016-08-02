@@ -1,16 +1,13 @@
-{% set version = "0.1.0.dev0" %}
-{% set commit = "42cc57d9780a9125b4db41aec8a32202eb38ec47" %}
-
 package:
   name: symengine
-  version: {{ version }}
+  version: {{ GIT_DESCRIBE_TAG }}
 
 source:
-  fn: {{ commit }}.tar.gz
-  url: https://github.com/symengine/symengine/archive/{{ commit }}.tar.gz
+  git_url: https://github.com/symengine/symengine
+  git_tag: 39fc52c985879548b4ad2a4aefcaea0b0911f9d3
 
 build:
-  number: 2
+  number: {{ GIT_DESCRIBE_NUMBER }}
   skip: true        # [win and not py35]
   features:
     - vc14          # [win and py35]
