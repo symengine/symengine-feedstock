@@ -52,6 +52,7 @@ install:
     - cmd: set "PATH=%CONDA_INSTALL_LOCN%\\Scripts;%CONDA_INSTALL_LOCN%\\Library\\bin;%PATH%"
     - cmd: conda config --set show_channel_urls true
     - cmd: conda config --add channels conda-forge
+    - cmd: conda config --add channels symengine
 
     # Add a hack to switch to `conda` version `4.1.12` before activating.
     # This is required to handle a long path activation issue.
@@ -74,4 +75,4 @@ build: off
 test_script:
     - "%CMD_IN_ENV% conda build recipe --quiet"
 deploy_script:
-    - cmd: upload_or_check_non_existence .\recipe conda-forge --channel=main
+    - cmd: upload_or_check_non_existence .\recipe symengine --channel=main
