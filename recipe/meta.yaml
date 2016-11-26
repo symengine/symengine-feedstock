@@ -10,7 +10,7 @@ source:
   url: https://github.com/symengine/symengine/archive/{{ commit }}.tar.gz
 
 build:
-  number: 0
+  number: 1
   skip: true        # [win and not py35]
   features:
     - vc14          # [win and py35]
@@ -44,6 +44,7 @@ test:
 about:
   home: https://github.com/symengine/symengine
   license: MIT
+  license_file: LICENSE
   summary: 'SymEngine is a fast symbolic manipulation library, written in C++'
 
 extra:
