@@ -13,8 +13,8 @@ docker info
 config=$(cat <<CONDARC
 
 channels:
- - symengine
  - conda-forge
+ - symengine
  - defaults # As we need conda-build
 
 conda-build:

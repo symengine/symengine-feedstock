@@ -1,3 +1,8 @@
+channels:
+  sources: [conda-forge, symengine]
+  targets:
+    - [symengine, main]
+
 travis:
   secure:
     BINSTAR_TOKEN: yZhgdyfroue9/QiC4NFFbo1aWSbn/KdgiXeC4kTBdJxekj2dGZTv8ZlryX0iNU6M0MfwsRU4kHvuolZaAfzk6DQ2u2eIMUGNGqAbLNlkg8AnMnGxHaBENUhUn0Y+7nfcyf+x5qdg4hp4qka1DvjgKulnl6e1hDPlOAy1zjk5eWCUcB4JnyMOGfzFIyTh+AXgDkNf6ctB+DNeTxNCMLu/XSqwG1byW05TslmWfKNckyeX7poEzyzwSaZPkPdj4Ie2+93swvb+WNXDP6Z7uLiyARF6ntkJjwY2OU3AVI/BRRsSd5/chhaRL14qAbgIazGBBELJx2eii63i9VM62XZCuEz0VkU6RIjNg2HffZ6n8Visra1X8Z4oqrUOnm84a5lbLqlaztde5ccZfvAZAlD4BnodwfS/zDn0MMgifl7WPIkZjQnyMRiDGE2NSGfLy7Fn2Nw74znxuBg1c7L60toUbyk4ANTcuoHAyGr8EW6Ki2grIP2qIWziQbDE1fdwzJFlFgA8/LV+bHT2ruqPDt62+UVj5kbi6Pf0f1+L0AAlqOHpkyk2Zfe8qpdqYN+zY2JH+f4SeyQXCJ5u+N2Q77zvymfJmYaZYHFTW/N8WOv5APZlYh2yFBMEjnkHu+U3YEO9au18yXVtFg5jA/ealPLuz4aMS01/7TlvHJA9L5fUd0Y=
