@@ -1,5 +1,5 @@
 channels:
-  sources: [defaults, conda-forge, symengine]
+  sources: [symengine, conda-forge, defaults]
   targets:
     - [symengine, dev]
 

@@ -13,9 +13,9 @@ docker info
 config=$(cat <<CONDARC
 
 channels:
- - defaults
- - conda-forge
  - symengine
+ - conda-forge
+ - defaults
 
 conda-build:
  root-dir: /feedstock_root/build_artefacts
