@@ -12,6 +12,7 @@ cmake \
     -DWITH_MPC=yes \
     -DBUILD_FOR_DISTRIBUTION=yes \
     -DBUILD_SHARED_LIBS=yes \
+    -DWITH_LLVM=yes \
     ..
 
 cmake --build .
