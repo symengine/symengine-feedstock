@@ -10,12 +10,12 @@ environment:
 
   matrix:
     - TARGET_ARCH: x86
-      CONDA_PY: 35
-      CONDA_INSTALL_LOCN: C:\\Miniconda35
+      CONDA_PY: 27
+      CONDA_INSTALL_LOCN: C:\\Miniconda
 
     - TARGET_ARCH: x64
-      CONDA_PY: 35
-      CONDA_INSTALL_LOCN: C:\\Miniconda35-x64
+      CONDA_PY: 27
+      CONDA_INSTALL_LOCN: C:\\Miniconda-x64
 
 
 # We always use a 64-bit machine, but can build x86 distributions
@@ -42,6 +42,7 @@ install:
     # Add our channels.
     - cmd: conda config --set show_channel_urls true
     - cmd: conda config --remove channels defaults
+    - cmd: conda config --add channels defaults
     - cmd: conda config --add channels symengine
     - cmd: conda config --add channels conda-forge
 
