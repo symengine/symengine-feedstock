@@ -13,8 +13,8 @@ docker info
 config=$(cat <<CONDARC
 
 channels:
- - conda-forge
  - symengine
+ - conda-forge
  - defaults
 
 conda-build:
