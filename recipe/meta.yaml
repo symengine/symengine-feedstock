@@ -10,7 +10,7 @@ source:
   url: https://github.com/symengine/symengine/archive/{{ commit }}.tar.gz
 
 build:
-  number: 1
+  number: 2
   msvc_compiler: 14.0
   features:
     - vc14             # [win]
@@ -20,16 +20,16 @@ requirements:
     - toolchain        # [unix]
     - cmake
     - gmp >=5.0.1,<7   # [unix]
-    - mpfr 3.*         # [unix]
-    - mpc 1.*          # [unix]
     - mpir 3.*         # [win]
+    - mpfr 3.*
+    - mpc 1.*
     - vc 14            # [win]
     - llvmdev 3.9.*    # [unix]
   run:
     - gmp >=5.0.1,<7   # [unix]
-    - mpfr 3.*         # [unix]
-    - mpc 1.*          # [unix]
     - mpir 3.*         # [win]
+    - mpfr 3.*
+    - mpc 1.*
     - vc 14            # [win]
 
 test:
