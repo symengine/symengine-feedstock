@@ -12,7 +12,10 @@ cmake ^
     -DCMAKE_BUILD_TYPE=Release ^
     -DBUILD_FOR_DISTRIBUTION=yes ^
     -DBUILD_SHARED_LIBS=yes ^
+    -DMSVC_USE_MT=no ^
     ..
+
+if [%ARCH%] == [64] cmake -DWITH_LLVM=yes ..
 
 cmake --build . --config Release
 cmake --build . --config Release --target install

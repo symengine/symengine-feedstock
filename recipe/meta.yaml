@@ -27,7 +27,7 @@ requirements:
     - mpfr 3.*
     - mpc 1.*
     - vc 14            # [win]
-    - llvmdev 3.9.*    # [unix]
+    - llvmdev 3.9.*    # [not win32]
   run:
     - gmp >=5.0.1,<7   # [unix]
     - mpir 3.*         # [win]
