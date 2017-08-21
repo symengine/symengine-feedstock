@@ -1,5 +1,5 @@
-{% set commit = "97fd5253d69b76a15f0b306e19fe89beda4bc5d7" %}
-{% set version = "0.3.0" %}
+{% set commit = "67b75b0bb3c57ef753fb5e060b7bea41570dab32" %}
+{% set version = "0.3.0.192.g67b75b0b" %}
 
 package:
   name: symengine
@@ -8,9 +8,6 @@ package:
 source:
   fn: {{ commit }}.tar.gz
   url: https://github.com/symengine/symengine/archive/{{ commit }}.tar.gz
-  patches:
-    # https://github.com/symengine/symengine/pull/1260
-    - 1260.patch
 
 build:
   number: 3
