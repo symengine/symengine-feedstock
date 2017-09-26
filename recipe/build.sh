@@ -13,6 +13,7 @@ cmake \
     -DBUILD_FOR_DISTRIBUTION=yes \
     -DBUILD_SHARED_LIBS=yes \
     -DWITH_LLVM=yes \
+    -DCMAKE_INSTALL_LIBDIR=lib \
     ..
 
 cmake --build .
