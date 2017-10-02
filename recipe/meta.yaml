@@ -1,5 +1,5 @@
 {% set commit = "398a3f393c1657bebfb88126c9e7c24a53057f28" %}
-{% set version = "v0.3.0.237.g398a3f3" %}
+{% set version = "0.3.0.237.g398a3f3" %}
 
 package:
   name: symengine
