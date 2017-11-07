@@ -58,9 +58,9 @@ conda clean --lock
 conda install --yes --quiet conda-forge-build-setup
 source run_conda_forge_build_setup
 
-# Embarking on 1 case(s).
-    conda build /recipe_root --quiet || exit 1
-    upload_or_check_non_existence /recipe_root symengine --channel=dev || exit 1
+conda build /recipe_root --quiet || exit 1
+upload_or_check_non_existence /recipe_root symengine --channel=dev || exit 1
+
 touch /feedstock_root/build_artefacts/conda-forge-build-done
 EOF
 
