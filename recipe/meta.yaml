@@ -1,5 +1,5 @@
-{% set commit = "a7b1eef4b69dc93cef9bc2a2317e2356bbbc3dbe" %}
-{% set version = "0.3.0.270.ga7b1eef4" %}
+{% set commit = "22cef7062324caee649dd2b956a1e03cec83ff8b" %}
+{% set version = "0.3.0.353.g22cef70" %}
 
 package:
   name: symengine
@@ -10,7 +10,7 @@ source:
   url: https://github.com/symengine/symengine/archive/{{ commit }}.tar.gz
 
 build:
-  number: 3
+  number: 0
   msvc_compiler: 14.0
   features:
     - vc14             # [win]
