@@ -21,7 +21,7 @@ requirements:
     - cmake
     - gmp 6.1.*        # [unix]
     - mpir 3.*         # [win]
-    - mpfr 3.*
+    - mpfr 4.*
     - mpc 1.*
     - vc 14            # [win]
     - llvmdev 3.9.*    # [not win32]
@@ -29,7 +29,7 @@ requirements:
   run:
     - gmp >=6.1,<7     # [unix]
     - mpir 3.*         # [win]
-    - mpfr 3.*
+    - mpfr 4.*
     - mpc 1.*
     - vc 14            # [win]
     - libflint 2.5.*   # [unix]
