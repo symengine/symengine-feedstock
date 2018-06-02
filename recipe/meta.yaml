@@ -10,7 +10,7 @@ source:
   url: https://github.com/symengine/symengine/archive/{{ commit }}.tar.gz
 
 build:
-  number: 0
+  number: 1
   msvc_compiler: 14.0
   features:
     - vc14             # [win]
